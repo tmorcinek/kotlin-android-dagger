@@ -23,4 +23,5 @@ class MainActivity : AppCompatActivity() {
 
         (findViewById(R.id.mainText) as TextView).text = locationManager.toString();
     }
+
 }
