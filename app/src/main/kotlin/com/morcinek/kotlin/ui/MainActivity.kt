@@ -11,7 +11,7 @@ import javax.inject.Inject
 /**
  * Copyright 2015 Tomasz Morcinek. All rights reserved.
  */
-public class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     @Inject
     lateinit var locationManager: LocationManager
