@@ -36,3 +36,13 @@ dependencies {
 kapt {
     generateStubs = true
 }
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        //It's required to place this dependency in Android module build.gradle directly.
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
+    }
+}
