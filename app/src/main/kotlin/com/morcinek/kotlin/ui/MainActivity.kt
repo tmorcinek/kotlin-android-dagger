@@ -3,9 +3,9 @@ package com.morcinek.kotlin.ui
 import android.location.LocationManager
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import kotlinx.android.synthetic.main.*
 import com.morcinek.kotlin.MainApplication
 import com.morcinek.kotlin.R
+import kotlinx.android.synthetic.main.main.*
 import javax.inject.Inject
 
 /**
