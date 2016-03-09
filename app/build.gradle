@@ -1,5 +1,17 @@
+buildscript {
+    ext.kotlin_version = '1.0.0'
+
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 23
@@ -35,14 +47,4 @@ dependencies {
 
 kapt {
     generateStubs = true
-}
-
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        //It's required to place this dependency in Android module build.gradle directly.
-        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
-    }
 }
