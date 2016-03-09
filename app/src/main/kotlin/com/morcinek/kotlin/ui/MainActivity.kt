@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity
 import com.morcinek.kotlin.MainApplication
 import com.morcinek.kotlin.R
 import kotlinx.android.synthetic.main.main.*
+import org.jetbrains.anko.alert
+import org.jetbrains.anko.toast
 import javax.inject.Inject
 
 /**
@@ -22,6 +24,15 @@ class MainActivity : AppCompatActivity() {
         (application as MainApplication).component.inject(this)
 
         mainText.text = locationManager.toString();
+
+        button.setOnClickListener({
+            alert("This is a warning dialog") {
+                positiveButton(android.R.string.ok) {
+                    toast("Ok Clicked")
+                }
+                negativeButton(android.R.string.cancel)
+            }.show()
+        })
     }
 
 }

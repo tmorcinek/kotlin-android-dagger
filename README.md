@@ -1,7 +1,7 @@
 kotlin-android-dagger
 ================
 
-Project demonstrating usage of Dagger 2 with Kotlin.
+Project demonstrating usage of Dagger 2 with Kotlin and Anko.
 Project is base on [android-dagger](https://github.com/JetBrains/kotlin-examples/tree/master/gradle/android-dagger) project from [kotlin examples](https://github.com/JetBrains/kotlin-examples) thanks to JetBrains.
 
 
@@ -11,9 +11,10 @@ Content
 This example shows how to setup dagger module, dagger graph, and how to inject objects to an Activity. 
 There are two types of injection:
  
- - Object injection 
- - View injection
+ - Object injection (Dagger feature)
+ - View injection (Kotlin feature)
 
+This example also shows how to use Anko library for creating simple Alert Dialog.
 
 Reference
 -------
@@ -25,6 +26,8 @@ Reference
 [Getting started with Android and Kotlin] (https://kotlinlang.org/docs/tutorials/kotlin-android.html)
 
 [Kotlin.org] (https://kotlinlang.org/)
+
+[Kotlink.Anko] (https://github.com/Kotlin/anko/)
 
 
 
